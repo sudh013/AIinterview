@@ -1,0 +1,89 @@
+💡 Core Concept (Refined)
+An AI-powered Video Interview SaaS that integrates with job platforms and automates personalized assessments based on job descriptions, with real-time candidate tracking and HR dashboard.
+
+🧑‍💼 User Roles (Expanded)
+Role	Description
+Admin	System control, manage integrations, billing, user permissions
+HR / Recruiter	Upload/manage job roles, review interviews, edit questions
+Candidate	Receives invites, records answers, can reschedule or get reminders
+Support Reviewer (Optional)	Human QA team for review / override of AI scoring
+
+🧱 Full-Stack Architecture (Updated)
+Frontend: React + Tailwind + Framer Motion
+Backend: Node.js (Express) + PostgreSQL
+AI Services: OpenAI GPT-4o for NLP + Whisper/Deepgram for audio/video + Fine-tuned scoring module
+Video Hosting: Mux / Vimeo API or own storage (S3)
+Job Platform Integrations: Webhooks + APIs (Greenhouse, Workday, Lever, etc.)
+
+🔌 Key Integrations
+ATS: Greenhouse, Lever, Workday, BambooHR
+
+Email: Postmark or SendGrid
+
+Video Recording: Mux or Daily.co
+
+AI: OpenAI (GPT-4o, Whisper), Google Vision (optional for face analysis)
+
+Notification: Firebase/SMS/WhatsApp APIs
+
+🔐 Security & Compliance
+Role-based access control (RBAC)
+
+End-to-end video encryption
+
+GDPR-compliant data storage
+
+Explicit candidate consent screen
+
+Audit logs for AI actions and HR overrides
+
+📊 Analytics and Scoring
+Interview completion rate
+
+AI-generated confidence score
+
+Time spent per question
+
+Candidate comparison view
+
+Optional: Facial expression / tone variation insights
+
+🛠️ Implementation Roadmap (Updated)
+Phase 1: MVP Core (0-4 Weeks)
+Job platform webhook listener
+
+AI question generation engine
+
+Candidate email flow + interview page
+
+Video capture + storage
+
+Admin dashboard (basic)
+
+Phase 2: Intelligence Layer (1-2 Months)
+Auto-question quality scoring
+
+Interview analytics (e.g., confidence, pause detection)
+
+HR scoring dashboard
+
+Manual override controls
+
+Phase 3: Integrations & Expansion (2-4 Months)
+Full ATS connectors
+
+Slack/MS Teams notifications
+
+Compliance engine (GDPR, audit logs)
+
+Multi-language question support
+
+Phase 4: Enterprise Features (4-6 Months)
+White-labeled portals
+
+API access for enterprises
+
+Multi-team management
+
+AI tuning controls (bias audit, question tone)
+
